@@ -1,0 +1,165 @@
+﻿@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: normal;
+	font-style: normal;
+	src: local('☺︎'), url('ProximaNova-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: 100;
+	font-style: normal;
+	src: local('☺︎'), url('ProximaNova-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	font-weight: 600;
+	font-style: normal;
+	src: local('☺︎'), url('ProximaNova-Semibold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Hack';
+	font-weight: normal;
+	font-style: normal;
+	src: local('☺︎'), url('Hack-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: 'Hack';
+	font-weight: bold;
+	font-style: normal;
+	src: local('☺︎'), url('Hack-Bold.ttf') format("truetype");
+}
+
+::selection {
+	background: rgba(243, 156, 18, 0.5);
+	color: rgba(255, 255, 255, 1.0);
+}
+
+
+body {
+	background: rgba(61, 158, 177, 1.0);
+	font-family: 'Proxima Nova';
+	font-weight: normal;
+}
+
+calculator {
+	display: block;
+	padding: 5vh 0;
+}
+
+.calculator {
+	position: relative;
+	display: block;
+	width: 50vh;
+	height: 70vh;
+	margin: 0 auto;
+	background: rgba(43, 45, 58, 1.0);
+	box-shadow: -10px 10px 0px -5px rgba(0,0,0,0.10);
+}
+
+.calculatorText {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+}
+
+.calculatorHistory {
+	display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 2% 5%;
+    text-align: right;
+    color: rgba(123, 123, 128, 1.0);    
+    position: absolute;
+    bottom: 10vh;
+    overflow: hidden;
+}
+
+.calculatorTextInput {
+	display: block;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 600;
+    min-height: 5vh;
+    color: rgba(255,255, 255, 1.0);
+    padding: 2% 5%;
+    position: absolute;
+    bottom: 0;
+	letter-spacing: 1px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.calculatorMessage {
+    display: block;
+    width: 100%;
+    font-size: 12.5px;
+    font-family: 'Hack';
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    text-align: right;
+    overflow: hidden;
+    padding: 2% 5%;
+    color: rgba(192, 57, 43,1.0);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.calculatorButtons {
+	position: absolute;    
+	width: 100%;
+	bottom: 0;
+	box-shadow: 0px -5px 0px 0px rgba(40,42,54,0.5);
+}
+
+.calculatorButtonHolder {
+	position: relative;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.calculatorButton {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 5%;
+    margin: 0;
+    border: 0.5px solid rgba(49, 53, 63, 1.0);
+    text-align: center;
+	color: rgba(255, 255, 255, 1.0);
+	cursor: pointer;
+}
+
+.calculatorButton.number {
+	background: rgba(56, 62, 76, 1.0);
+}
+
+.calculatorButton.operator {
+	background: rgba(51, 54, 69, 1.0);
+	color: rgba(133, 231, 244, 1.0);
+}
+
+.calculatorButton.operator.answer {
+	background: rgba(234, 45, 73, 1.0);
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.calculatorButton.double {
+	width: 50%;
+}

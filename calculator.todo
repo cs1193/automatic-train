@@ -1,0 +1,6 @@
++-- Check decimal only once allowed
++-- Check invert sign
+-- Enter button /backspace/delete
+-- div to textbox input text
++-- limit character by 10 letters
+-- scroll on big numbers
