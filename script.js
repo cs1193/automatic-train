@@ -35,6 +35,10 @@
 			var string = null;
 
 			switch (keycode) {
+				case 13:
+					string = "=";
+					break;
+
 				case 53:
 					string = (shift) ? "%" : "5";
 					break;
@@ -192,6 +196,8 @@
 					calculatorTextInput.innerHTML =  recipient;
 					calculator.clearNumbers();
 				}
+
+
 			} else {
 				calculatorHistoryInput.innerHTML = "";
 				var history = document.createTextNode(calculator.numbers[0] + " " + operator);
@@ -224,6 +230,7 @@
 					calculator.clearNumbers();
 				}
 			}
+
 		}
 
 		function InvertSign () {
